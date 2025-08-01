@@ -3,24 +3,13 @@ import os
 def clear():
   os.system('clear')
 
-def banner():
-  print("""
-    ██╗    ██╗██╗  ██╗ █████╗ ████████╗███████╗ █████╗ ██████╗ 
-    ██║    ██║██║  ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗
-    ██║ █╗ ██║███████║███████║   ██║   ███████╗███████║██████╔╝
-    ██║███╗██║██╔══██║██╔══██║   ██║   ╚════██║██╔══██║██╔═══╝ 
-    ╚███╔███╔╝██║  ██║██║  ██║   ██║   ███████║██║  ██║██║     
-     ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝ 
-     AUTHOR: Gabriel | INSTA: gabriel_ynn | 31/7/2008
-                     whatsappTookit """)
-
 def menu():
   while True:
     try:
       banner()
       print("[1] atacar")
       print("[2] sair")
-      escolha = int(input("whatsapp@root > "))
+      escolha = int(input("whatsapp@gabriel > "))
       if escolha == 1:
         try:
           numero = int(input("numero alvo(ex 94051041): "))
